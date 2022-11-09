@@ -16,9 +16,12 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "kotlin-project-template"
+rootProject.name = "onvu"
 
 includeBuild("build-logic/dependencies")
 includeBuild("build-logic/configuration")
 includeBuild("build-logic/service-deploy")
 //includeBuild("buildUtils/library-deploy")
+
+include(":backend:application")
+include(":backend:usecases")
